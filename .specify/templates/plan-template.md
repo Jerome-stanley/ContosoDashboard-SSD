@@ -31,7 +31,12 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+- The feature preserves the offline-first training runtime unless a cloud path is explicitly
+  approved and abstracted.
+- All user-data access paths enforce service-layer authorization and user isolation.
+- External services, storage providers, and auth adapters are accessed through interfaces.
+- The plan includes the narrowest practical validation for each affected layer.
+- Any breaking schema, auth, or storage change is called out before implementation.
 
 ## Project Structure
 
